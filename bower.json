@@ -19,6 +19,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "jquery-placeholder": "^2.3.1"
   }
 }

@@ -12,6 +12,9 @@
 	background: url(../img/line-blue.png) -100px bottom no-repeat,
 		url(../img/line-red.png) 50% 50% no-repeat,
 		url(../img/line-blue.png) 105% top no-repeat;
+	@media (max-width: 576px) {
+		height: 1000px;
+	}
 }
 .container-fluid_offer {
 	padding-top: 117px;
