@@ -1,0 +1,71 @@
+
+.offer {
+	position: relative;
+	padding-bottom: 136px;
+}
+.wrapper-background {
+	position: absolute;
+	top: -125px;
+	bottom: -125px;
+	width: 100%;
+	height: 750px;
+	background: url(../img/line-blue.png) -100px bottom no-repeat,
+		url(../img/line-red.png) 50% 50% no-repeat,
+		url(../img/line-blue.png) 105% top no-repeat;
+}
+.container-fluid_offer {
+	padding-top: 117px;
+}
+.offer__discount, .offer__profit {
+	text-align: center;
+}
+.offer__before-percent {
+	font-size: 181.25%;
+	color: #969797;
+}
+.offer__percent {
+	font-size: 481%;
+	color: #1f3290;
+	vertical-align: middle;
+}
+.offer__text {
+	font-size: 155%;
+	line-height: 165%;
+}
+.offer__button {
+	font-size: 66.87%;
+	color: rgba(0, 0, 0, 0.5);
+	margin-top: 24px;
+	border-radius: 20px;
+	height: 35px;
+	padding: 2px 0px 0 35px;
+	line-height: 140%;
+	cursor: pointer;
+}
+.offer__button-icon-tablet {
+	display: inline-block;
+	font-size: 100%;
+	margin: 0 20px 0 20px;
+	// outline: 1px solid red;
+	width: 33px;
+	height: 27px;
+	vertical-align: middle;
+    background: url(../img/pills.png) 0 0 no-repeat;
+    background-size: 60px;
+}
+.offer__button:hover .offer__button-icon-tablet {
+    background-position-x: -30px;
+}
+// ---------- profit ---------------
+.offer__profit-title {
+	font-size: 291.25%;
+	color: #b02489;
+	padding-bottom: 24px;
+}
+.offer__profit {
+	padding-top: 20px;
+	@media (max-width: 576px) {
+		margin-top: 40px;
+		// border-top: 1px solid gray;;
+	}
+}

@@ -1,0 +1,70 @@
+.address {
+	padding-top: 25px;
+	padding-bottom: 84px;
+}
+.row_address {
+	max-width: 790px;
+}
+.address__map {
+	height: 369px;
+	background: url(../img/map.jpg) 50% 0 no-repeat;
+	@media (max-width: 576px) {
+		background-size: 350px;
+		height: 200px;
+	}
+}
+.address__title {
+	padding-top: 15px;
+	padding-bottom: 32px;
+	text-align: center;
+	font-size: 155%;
+}
+.address__text {
+	padding-bottom: 59px;
+	text-align: center;
+	font-size: 95%;
+}
+.address__name {
+	padding-left: 60px;
+}
+.address__region, .address__city {
+	color: rgba(38, 38, 38, 0.8);
+}
+.address__name, .address__region, .address__city {
+	@media (max-width: 576px) {
+		text-align: center;
+		padding-left: 0;
+	}
+}
+.address__underline {
+	padding-top: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid gray;
+}
+.address__underline:last-child {
+	border: none;
+	padding-top: 0;
+	margin-bottom: 0;
+}
+.address__head {
+	width: 100%;
+	text-align: center;
+	color: #20328f;
+	font-size: 95%;
+	line-height: 45px;
+	height: 45px;
+	background-color: #f0f0f0;
+	margin: 50px 0 23px;
+}
+.address__button {
+	display: block;
+	width: 66px;
+	height: 66px;
+	border-radius: 33px;
+	padding: 0;
+	margin-top: 49px;
+	font-size: 200%;
+	cursor: pointer;
+	color: rgba(38, 38, 38, 0.8);
+	border-color: rgba(38, 38, 38, 0.8);
+}

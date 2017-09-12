@@ -1,0 +1,87 @@
+.call-center {
+	padding-top: 86px;
+	padding-bottom: 80px;
+	background: #efefef url(../img/sign-question.png) center -151px no-repeat;
+}
+.call-center__icon-specialist {
+	margin: 0 auto;
+	width: 71px;
+	height: 87px;
+	background: url(../img/icon-specialist.svg) 0 0 no-repeat;
+}
+.call-center__text {
+	width: 50%;
+	margin: 36px auto 64px;
+	text-align: center;
+	font-size: 155%;
+}
+.call-center__persone {
+	@media (max-width: 720px) {
+		margin-top: 30px;
+	}
+}
+.call-center__block-photo {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+}
+.call-center__photo-persone {
+	display: block;
+	margin: 0 auto 34px;
+	width: 100%;
+	border-radius: 50%;
+	box-shadow: 0 10px 20px #b8b8b8;
+}
+.call-center__ask-question {
+	position: absolute;
+	bottom: 0;
+	right: 16px;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background-color: #a8438a;
+	overflow: hidden;
+	text-align: center;
+}
+.call-center__ask-question_blik {
+	top: -50%;
+	left: 0;
+	background-color: #b55899;
+}
+.call-center__ask-question-sign {
+	position: relative;
+	color: #fff;
+	line-height: 55px;
+	font-size: 155%;
+}
+.call-center__persone-name {
+	font-size: 85%;
+	text-align: center;
+}
+.call-center__persone-specialty {
+	font-size: 75%;
+	text-align: center;
+}
+.call-center__button {
+	display: block;
+	margin: 71px auto 0;	
+	padding: 11px 44px 7px 44px;
+	border: 1px solid  #b02589;
+	border-radius: 24px;
+	font-size: 74%;
+	font-family: 'B&N-e2e4-Regular', Arial, serif;
+	color: rgba(0,0,0,.5);
+	cursor: pointer;
+	&:hover .call-center__button-icon {
+		background: url(../img/pills.png) -52px -42px no-repeat;
+	}
+}
+.call-center__button-icon {
+	display: inline-block;
+	// font-size: 84.37%;
+	margin: 0 0px 0 8px;
+	width: 23px;
+	height: 21px;
+    vertical-align: middle;
+    background: url(../img/pills.png) -9px -42px no-repeat;
+}

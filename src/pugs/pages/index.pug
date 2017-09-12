@@ -1,0 +1,67 @@
+extends ../_layout
+
+block title
+	title Федеральная программа «Забота и здоровье»
+
+block main-content
+	.offer
+		.wrapper-background
+		.container-fluid.container-fluid_offer
+			.row.justify-content-between
+				.col-sm-5.offer__discount 
+					span.offer__before-percent до 
+					span.offer__percent 30%
+					.offer__text Скидка на препараты, участвующие в программе «Здоровье и забота»
+					button.btn.btn-outline-primary.offer__button(type='button') Список аптек
+						span.offer__button-icon-tablet
+				.col-sm-5.offer__profit 
+					.offer__profit-title Выгода
+					.offer__text припокупке 2 упаковок препарата из программы, 3 упаковка – бесплатно
+					button.btn.btn-outline-primary.offer__button(type='button') Список препаратов
+						span.offer__button-icon-tablet
+	.call-center
+		.call-center__icon-specialist
+		.call-center__text Забота – это не только скидки, но и бесплатная консультация от специалистов
+		.container-fluid
+			+persons(list_persons)
+			.row
+				button.btn.btn-outline-primary.call-center__button(type='button') Задать вопрос
+					span.call-center__button-icon
+	.address
+		.container-fluid
+			.row.justify-content-center
+				.col.address__map
+			.row.justify-content-center
+				.col-12.col-md-6.address__main-head
+					.address__title Аптеки и медицинские учреждения, участвующие в программе
+					.address__text Список препаратов, включенных в программу, можно узнать по тел. 8 800 234 149 04 или по почте: proinform1@list.ru
+			+name_region_city(list_pharmacies)
+			.row.justify-content-center.row_address
+				.address__head Бесплатные кабинеты лечения головной боли
+			+name_region_city(list_free_treatment)
+			.row.justify-content-center.row_address
+				.address__head Частные клиники со скидкой 15-20%
+			+name_region_city(list_free_treatment)
+			.row.justify-content-center
+				button.btn.btn-outline-primary.address__button(type='button') &#8212;
+	.subscribtion
+		.container-fluid.container-fluid_subscribtion
+			.row.justify-content-center
+				.col-12.subscribtion__title Участвовать в программе
+				.col-12.subscribtion__text Теперь лекарственные средства для длительной терапии стали доспутнее 
+			form.subscribtion__form(name='subscribtionForm' action='#' method='post')
+					.row
+						.col.form-group
+							input.form-control.subscribtion__input(type='text' name='name' placeholder='ФИО')
+						.col.form-group
+							input.form-control.subscribtion__input(type='phone' name='phone' placeholder='Телефон')
+					.row
+						.col.form-group
+							input.form-control.subscribtion__input(type='email' name='email' placeholder='E-mail')
+						.col.form-group
+							input.form-control.subscribtion__input(type='text' name='city' placeholder='Город')
+					.row.justify-content-center
+						button.btn.btn-primary.subscribtion__form-button(type='submit') OK
+				
+
+

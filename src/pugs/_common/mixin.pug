@@ -1,0 +1,18 @@
+mixin persons(list)
+	.row
+		each person in list
+			.col-sm-6.col-md-3.call-center__persone(class='.call-center__persone_'+person.image)
+				.call-center__block-photo
+					.call-center__ask-question
+						.call-center__ask-question.call-center__ask-question_blik
+						span.call-center__ask-question-sign ?
+					image.call-center__photo-persone(src='../img/'+person.image+'.jpg' title=person.name alt=person.name)
+				.call-center__persone-name= person.name
+				.call-center__persone-specialty= person.spec
+mixin name_region_city(list)
+	.row.row_address
+		each item in list
+			.col-sm-4.col-md-6.address__name= item.name
+			.col-sm-4.col-md-2.address__region= item.region
+			.col-sm-4.col-md-4.address__city= item.city
+			.w-100.address__underline
